@@ -1,2 +1,2 @@
-#Mirai - tienda de ropa
+# Mirai - tienda de ropa
 Proyecto de React para CoderHouse
