@@ -6,9 +6,9 @@ function App() {
   return (
     <div>
       <NavBar className="NavBar"/>
-      <header className="App-header">
+      <section className="App-header">
         <ItemListContainer greeting="Le damos la bienvenida a Mirai, la mejor tienda de ropa"/>
-      </header>
+      </section>
     </div>
   );
 }

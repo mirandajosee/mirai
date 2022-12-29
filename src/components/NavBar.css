@@ -2,9 +2,7 @@
     background-color: purple;
     flex-direction:row;
     align-items: 'center';
-    justify-content: 'center';
-    align-items: 'center';
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: 'center';
   }
 

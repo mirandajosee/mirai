@@ -1,6 +1,8 @@
 h6 {
-    margin-left: 25%;
     border-radius: 100%;
-    background-color: #CF1B7D;
+    background-color: red;
     text-align: center;
+    color: aliceblue;
+    margin: 0;
+    margin-left: 50%;
 }
