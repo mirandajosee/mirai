@@ -1,14 +1,4 @@
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
+
 .NavBar {
   background-color: purple;
   flex-direction:row;
@@ -20,4 +10,6 @@ ion-icon{
   font-size: 30px;
   color: aliceblue;
   justify-content: center;
+  align-content: center;
+  align-self: center;
 }
