@@ -1,0 +1,21 @@
+h1{
+    font-family: "Montserrat";
+    text-align: 'center';
+    padding: 10px;
+    font-size: 30px;
+    color:  #B6D4B9 ;
+    background-color:  #282c34 ;
+    align-items: 'center';
+    width:100%;
+}
+.itemlist {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:max-content;
+    width: 100%;
+  }

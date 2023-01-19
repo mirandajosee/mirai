@@ -1,0 +1,15 @@
+.product{
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px;
+    border-top: solid #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.titulo{
+    color: aliceblue;
+}
+
+.descripcion{
+    color: aliceblue;
+}

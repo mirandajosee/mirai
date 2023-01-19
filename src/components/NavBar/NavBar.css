@@ -1,0 +1,25 @@
+.NavBar {
+    background-color: purple;
+    flex-direction:row;
+    align-items: 'center';
+    justify-content: space-between;
+    text-align: 'center';
+  }
+
+  
+div {
+    width: 100%;
+    height: 100%;
+    align-items: 'center';
+    display: flex;
+    flex-wrap: wrap;
+    text-align: 'center';
+}
+h5 {
+  color:white;
+  margin: 0;
+
+}
+.Icon {
+  flex-direction: column;
+}
