@@ -1,17 +1,15 @@
 import React from 'react'
 import Item from '../Item/Item'
 import { Link } from 'react-router-dom'
-import Counter from '../Counter/Counter';
+import "./ItemList.css"
+
 const ItemList = ({productos}) => {
   return (
-    <ul>
+    <ul className='ItemList'>
         {productos.map((producto) => (
-            <span>
-            <Link key={producto.id} to={`item/${producto.id}`}>
+            <Link key={producto.id} to={`item/${producto.id}`} style={{textDecoration: 'none'}}>
                 <Item producto={producto}/> 
             </Link>
-            <Counter/>
-            </span>
         ))}
     </ul>
   )

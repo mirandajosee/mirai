@@ -1,7 +1,5 @@
-import {useState} from 'react'
 import './Counter.css'
-const Counter = () => {
-    const [counter,setCounter]= useState(0);
+const Counter = ({stock,updateCounter,counter}) => {
   return (
     <div style={{flexDirection:'row',alignContent:'center',justifyContent:'center',backgroundColor:'darkpurple'}}>
 
@@ -11,8 +9,8 @@ const Counter = () => {
         <h2 className='contador'>{counter}</h2>
 
             <span style={{flexDirection:'row'}}>
-                <button onClick={()=>setCounter(counter>0? counter-1:0)}>-</button>
-                <button onClick={()=>setCounter(counter+1)}>+</button>
+                <button onClick={()=>updateCounter(counter>0? counter-1:0)}>-</button>
+                <button onClick={()=>{counter===stock? alert("Alcanzaste el máximo de productos disponibles"):updateCounter(counter+1)}}>+</button>
             </span>
 
         </div>

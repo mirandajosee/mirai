@@ -1,9 +1,22 @@
 .product{
-    flex-direction: column;
-    padding: 2rem;
+    flex-direction: row;
+    padding: 1.5rem;
     border: 1px;
-    border-top: solid #fff;
+    border: solid #fff;
     transition: all 0.3s ease-in-out;
+    background-color:green;
+    align-items:'center';
+    text-align:'center';
+    flex-direction:"row";
+    color:darkgrey;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+.product:hover{
+    background-color:limegreen;
+    color: blueviolet;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 }
 
 .titulo{

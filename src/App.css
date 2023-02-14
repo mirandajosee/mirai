@@ -13,3 +13,12 @@ ion-icon{
   align-content: center;
   align-self: center;
 }
+
+.background {
+  background-color: #282c34;
+  min-height: 120vh;
+  display: flex;
+  text-align: center;
+  height:max-content;
+  width: 100%;
+}

@@ -16,10 +16,16 @@ div {
     text-align: 'center';
 }
 h5 {
-  color:white;
   margin: 0;
 
 }
 .Icon {
   flex-direction: column;
+}
+
+.active {
+  color: white
+}
+.inactive {
+  color: grey
 }

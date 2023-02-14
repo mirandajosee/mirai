@@ -1,11 +1,15 @@
 import './Item.css'
 
 const Item = ({producto}) => {
+  let descripcionAcortada=producto.description.substr(0, 300);
   return (
-    <li key={producto.id} width="200" className='product' style={{backgroundColor:'green',alignItem:'center',textAlign:'center'}}>
-        <img alt={producto.title} src={producto.image} width='200' />
-        <h2 className='titulo'>{producto.title}</h2>
-        <h2 className='descripcion'>{producto.description}</h2>
+    <li key={producto.id} width="200px" height="150px" className='product'>
+        <img alt={producto.title} src={`/products/${producto.imageId}`} width='125px' style={{padding:"20px",paddingLeft:"0px"}} />
+        <span style={{flexDirection:"column"}}>
+          <h4 className='titulo'>{producto.title}</h4>
+          <br></br>
+          <h5>{descripcionAcortada.substr(0, Math.min(descripcionAcortada.length, descripcionAcortada.lastIndexOf(" ")))} ...</h5>
+        </span>
     </li>
   )
 }

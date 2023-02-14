@@ -1,0 +1,21 @@
+.productCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border: 1px;
+    border: solid #fff;
+    transition: all 0.3s ease-in-out;
+    background-color:green;
+    min-width: "500px";
+    color:white;
+}
+
+.emptyCart{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
