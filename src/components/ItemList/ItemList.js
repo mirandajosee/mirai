@@ -7,7 +7,7 @@ const ItemList = ({productos}) => {
   return (
     <ul className='ItemList'>
         {productos.map((producto) => (
-            <Link key={producto.id} to={`item/${producto.id}`} style={{textDecoration: 'none'}}>
+            <Link key={producto.id} to={`/item/${producto.id}`} style={{textDecoration: 'none'}}>
                 <Item producto={producto}/> 
             </Link>
         ))}

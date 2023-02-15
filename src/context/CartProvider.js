@@ -16,8 +16,13 @@ const CartProvider = ({children}) => {
         const alreadyExisted=cart.find(prod => prod.id===newProduct.id)
         if(alreadyExisted){
             const filtedList=cart.filter(prod => prod.id!==newProduct.id)
+            const delta = alreadyExisted.stock - (alreadyExisted.quantity+newProduct.quantity)
+            if(delta>=0){
             const newValue={...alreadyExisted,quantity:alreadyExisted.quantity+newProduct.quantity}
-            setCart([...filtedList,newValue])
+            setCart([...filtedList,newValue])}
+            else{
+                alert("No podemos ofrecerte más unidades de este producto :C Sólo disponemos de "+alreadyExisted.stock+" unidades")
+            }
         }else
         {
         setCart([...cart,newProduct])}
